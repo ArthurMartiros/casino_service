@@ -1,0 +1,54 @@
+export = knex;
+declare function knex(config: any, ...args: any[]): any;
+declare namespace knex {
+    class Client {
+        constructor(...args: any[]);
+        config: any;
+        connectionSettings: any;
+        valueForUndefined: any;
+        acquireConnection(): any;
+        addListener(type: any, listener: any): any;
+        assertCanCancelQuery(): void;
+        cancelQuery(): void;
+        columnBuilder(tableBuilder: any, type: any, args: any): any;
+        columnCompiler(tableBuilder: any, columnBuilder: any): any;
+        database(): any;
+        destroy(callback: any): any;
+        emit(type: any, args: any): any;
+        eventNames(): any;
+        formatter(): any;
+        getMaxListeners(): any;
+        initializeDriver(): void;
+        initializePool(config: any): void;
+        listenerCount(type: any): any;
+        listeners(type: any): any;
+        off(type: any, listener: any): any;
+        on(type: any, listener: any): any;
+        once(type: any, listener: any): any;
+        poolDefaults(poolConfig: any): any;
+        prepBindings(bindings: any): any;
+        prependListener(type: any, listener: any): any;
+        prependOnceListener(type: any, listener: any): any;
+        query(connection: any, obj: any): any;
+        queryBuilder(): any;
+        queryCompiler(builder: any): any;
+        raw(...args: any[]): any;
+        rawListeners(type: any): any;
+        releaseConnection(connection: any): any;
+        removeAllListeners(type: any, ...args: any[]): any;
+        removeListener(type: any, listener: any): any;
+        runner(connection: any): any;
+        schemaBuilder(): any;
+        schemaCompiler(builder: any): any;
+        setMaxListeners(n: any): any;
+        stream(connection: any, obj: any, _stream: any, options: any): any;
+        tableBuilder(type: any, tableName: any, fn: any): any;
+        tableCompiler(tableBuilder: any): any;
+        transaction(container: any, config: any, outerTx: any): any;
+        validateConnection(connection: any): any;
+        wrapIdentifier(value: any): any;
+    }
+    const Promise: any;
+    const VERSION: any;
+    function raw(sql: any, bindings: any): any;
+}

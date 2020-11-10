@@ -1,0 +1,14 @@
+{
+    "rules": {
+        "no-any": true,
+        "await-promise": true,
+        "semicolon": true,
+        "class-name": true,
+        "no-var-keyword": true,
+        "no-var-requires": true,
+        "no-duplicate-variable": true,
+        "variable-name": {
+            "options": ["allow-snake-case"]
+        }
+    }
+}
